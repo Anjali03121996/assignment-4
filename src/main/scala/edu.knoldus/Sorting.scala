@@ -37,7 +37,19 @@ class Sorting {
         if (x < list2.head) (x :: list2)
         else (list2.head :: x :: list2.tail)
     }
-*/
+*/   def bubbleSort(list: List[Int]): List[Int] = {
+    val arr=list.toArray
+    for (i <- 1 to arr.length - 1) {
+      for (j <- (i - 1) to 0 by -1) {
+        if (arr(j) > arr(j + 1)) {
+          var temp = arr(j + 1)
+          arr(j + 1) = arr(j)
+          arr(j) = temp
+        }
+      }
+    }
+    arr.toList
+  }
   // def bubbleSort(list: List[Int]): List[Int] = ???
 
   def insertionSort(list: List[Int]): List[Int] = {
