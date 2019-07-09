@@ -1,1 +1,0 @@
-scalac -classpath /home/knoldus/IdeaProjects/scala-01/assignment-4/target/scala-2.12/classes -bootclasspath /home/knoldus/.sbt/boot/scala-2.12.6/lib/scala-library.jar /home/knoldus/IdeaProjects/scala-01/assignment-4/src/main/scala/edu.knoldus/Sorting.scala
